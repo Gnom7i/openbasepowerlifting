@@ -1,0 +1,19 @@
+uuid: a5964872-b0ab-4882-a758-3a1bc675bf06
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_place
+field_name: field_place
+entity_type: node
+bundle: openpowerliftingstring
+label: Place
+description: "Mandatory. The recorded place of the lifter in the given division at the end of the meet.\r\n\r\nValues are as follows:\r\n\r\n- Positive number: the place the lifter came in.\r\n- G: Guest lifter. The lifter succeeded, but wasn't eligible for awards.\r\n- DQ: Disqualified. Note that DQ could be for procedural reasons, not just failed attempts.\r\n- DD: Doping Disqualification. The lifter failed a drug test.\r\n- NS: No-Show. The lifter did not show up on the meet day.\r\n\r\nThe `Place` column is defined by [modules/opltypes/src/place.rs](https://gitlab.com/openpowerlifting/opl-data/blob/master/modules/opltypes/src/place.rs)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

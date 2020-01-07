@@ -1,0 +1,19 @@
+uuid: 9bf26499-e2f4-4e4d-9117-913de1f6d80a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mcculloch
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_mcculloch
+field_name: field_mcculloch
+entity_type: node
+bundle: openpowerliftingstring
+label: McCulloch
+description: "Optional. A positive number if McCulloch points could be calculated, empty if the lifter was disqualified.\r\n\r\nMcCulloch is the name used by the USPA/IPL for Wilks points multiplied by an age-adjustment factor. McCulloch is technically just the coefficients for Masters lifters -- coefficients for Junior and Sub-Junior lifters are called \"Foster Coefficients.\" Our implementation of McCulloch contains both.\r\n\r\nThe calculation of McCulloch points is defined by [modules/coefficients/src/mcculloch.rs](https://gitlab.com/openpowerlifting/opl-data/blob/master/modules/coefficients/src/mcculloch.rs).\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

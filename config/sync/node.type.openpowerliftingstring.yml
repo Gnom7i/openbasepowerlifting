@@ -1,0 +1,18 @@
+uuid: df726a7d-06c9-43e8-84e0-0439e8284598
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: OpenPowerliftingString
+type: openpowerliftingstring
+description: 'Импортированная строка из OpenPowerliftingString'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

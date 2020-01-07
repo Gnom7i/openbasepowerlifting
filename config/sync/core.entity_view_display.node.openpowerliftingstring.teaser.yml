@@ -1,0 +1,103 @@
+uuid: df081284-3155-4f8e-92b5-fdcacfb103c5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.openpowerliftingstring.feeds_item
+    - field.field.node.openpowerliftingstring.field_age
+    - field.field.node.openpowerliftingstring.field_ageclass
+    - field.field.node.openpowerliftingstring.field_bench1kg
+    - field.field.node.openpowerliftingstring.field_bench2kg
+    - field.field.node.openpowerliftingstring.field_bench3kg
+    - field.field.node.openpowerliftingstring.field_bench4kg
+    - field.field.node.openpowerliftingstring.field_best3benchkg
+    - field.field.node.openpowerliftingstring.field_best3deadliftkg
+    - field.field.node.openpowerliftingstring.field_best3squatkg
+    - field.field.node.openpowerliftingstring.field_birthyearclass
+    - field.field.node.openpowerliftingstring.field_bodyweightkg
+    - field.field.node.openpowerliftingstring.field_country
+    - field.field.node.openpowerliftingstring.field_date
+    - field.field.node.openpowerliftingstring.field_deadlift1kg
+    - field.field.node.openpowerliftingstring.field_deadlift2kg
+    - field.field.node.openpowerliftingstring.field_deadlift3kg
+    - field.field.node.openpowerliftingstring.field_deadlift4kg
+    - field.field.node.openpowerliftingstring.field_division
+    - field.field.node.openpowerliftingstring.field_equipment
+    - field.field.node.openpowerliftingstring.field_event
+    - field.field.node.openpowerliftingstring.field_federation
+    - field.field.node.openpowerliftingstring.field_glossbrenner
+    - field.field.node.openpowerliftingstring.field_ipfpoints
+    - field.field.node.openpowerliftingstring.field_ipfpoints_float
+    - field.field.node.openpowerliftingstring.field_mcculloch
+    - field.field.node.openpowerliftingstring.field_meetcountry
+    - field.field.node.openpowerliftingstring.field_meetname
+    - field.field.node.openpowerliftingstring.field_meetstate
+    - field.field.node.openpowerliftingstring.field_name
+    - field.field.node.openpowerliftingstring.field_place
+    - field.field.node.openpowerliftingstring.field_sex
+    - field.field.node.openpowerliftingstring.field_squat1kg
+    - field.field.node.openpowerliftingstring.field_squat2kg
+    - field.field.node.openpowerliftingstring.field_squat3kg
+    - field.field.node.openpowerliftingstring.field_squat4kg
+    - field.field.node.openpowerliftingstring.field_tested
+    - field.field.node.openpowerliftingstring.field_totalkg
+    - field.field.node.openpowerliftingstring.field_unique_of_tamper
+    - field.field.node.openpowerliftingstring.field_weightclasskg
+    - field.field.node.openpowerliftingstring.field_wilks
+    - node.type.openpowerliftingstring
+  module:
+    - user
+id: node.openpowerliftingstring.teaser
+targetEntityType: node
+bundle: openpowerliftingstring
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  feeds_item: true
+  field_age: true
+  field_ageclass: true
+  field_bench1kg: true
+  field_bench2kg: true
+  field_bench3kg: true
+  field_bench4kg: true
+  field_best3benchkg: true
+  field_best3deadliftkg: true
+  field_best3squatkg: true
+  field_birthyearclass: true
+  field_bodyweightkg: true
+  field_country: true
+  field_date: true
+  field_deadlift1kg: true
+  field_deadlift2kg: true
+  field_deadlift3kg: true
+  field_deadlift4kg: true
+  field_division: true
+  field_equipment: true
+  field_event: true
+  field_federation: true
+  field_glossbrenner: true
+  field_ipfpoints: true
+  field_ipfpoints_float: true
+  field_mcculloch: true
+  field_meetcountry: true
+  field_meetname: true
+  field_meetstate: true
+  field_name: true
+  field_place: true
+  field_sex: true
+  field_squat1kg: true
+  field_squat2kg: true
+  field_squat3kg: true
+  field_squat4kg: true
+  field_tested: true
+  field_totalkg: true
+  field_unique_of_tamper: true
+  field_weightclasskg: true
+  field_wilks: true
+  langcode: true

@@ -1,0 +1,20 @@
+uuid: 7e2eb971-b9b1-4bfb-8642-747c4873d518
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ipfpoints_float
+field_name: field_ipfpoints_float
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: d6556e13-d309-48ce-91ba-2267f7182f81
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring
+target_entity_type_id: node
+target_bundle: openpowerliftingstring
+default_langcode: site_default
+language_alterable: false

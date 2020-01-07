@@ -1,0 +1,19 @@
+uuid: feceef4c-9795-485e-bc41-e50d8fde6cb1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_totalkg
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_totalkg
+field_name: field_totalkg
+entity_type: node
+bundle: openpowerliftingstring
+label: TotalKg
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

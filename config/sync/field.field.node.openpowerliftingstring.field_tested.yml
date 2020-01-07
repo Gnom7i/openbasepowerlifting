@@ -1,0 +1,19 @@
+uuid: 780f55bc-b51b-4540-8b04-67e00f3e9529
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tested
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_tested
+field_name: field_tested
+entity_type: node
+bundle: openpowerliftingstring
+label: Tested
+description: "Optional. `Yes` if the lifter entered a drug-tested category, empty otherwise.\r\n\r\nNote that this records whether the results *count as drug-tested*, which does not imply that the lifter actually took a drug test. Federations do not report which lifters, if any, were subject to drug testing."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

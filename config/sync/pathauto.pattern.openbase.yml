@@ -1,0 +1,22 @@
+uuid: c8b66711-4f0b-40e2-88cd-04250965c602
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: openbase
+label: openbase
+type: 'canonical_entities:node'
+pattern: 'row/[node:field_name]/[node:field_meetname]/[node:field_event]/[node:field_equipment]/[node:field_date]/[node:field_federation]'
+selection_criteria:
+  1d5f9711-4647-44db-8a61-938cb70f1f97:
+    id: node_type
+    bundles:
+      openpowerliftingstring: openpowerliftingstring
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1d5f9711-4647-44db-8a61-938cb70f1f97
+selection_logic: and
+weight: -5
+relationships: {  }

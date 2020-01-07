@@ -1,0 +1,19 @@
+uuid: 029982de-5b5c-4110-9cd9-81d869441b44
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ageclass
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_ageclass
+field_name: field_ageclass
+entity_type: node
+bundle: openpowerliftingstring
+label: AgeClass
+description: "Optional. The age class in which the filter falls, for example `40-45`. These classes are based on exact age of the lifter on the day of competition.\r\n\r\nAgeClass is mostly useful because sometimes a federation will report that a lifter competed in the 50-54 divison without providing any further age information. This way, we can still tag them as 50-54, even if the `Age` column is empty.\r\n\r\nThe full range available to `AgeClass` is defined by [modules/opltypes/src/ageclass.rs](https://gitlab.com/openpowerlifting/opl-data/blob/master/modules/opltypes/src/ageclass.rs). \r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

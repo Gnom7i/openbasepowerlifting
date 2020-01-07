@@ -1,0 +1,21 @@
+uuid: a37d50ad-5001-4939-92b5-d7ac278cffaa
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_squat2kg
+field_name: field_squat2kg
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 99c1a1ca-2e46-4c6f-a703-bd5b3309910a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_event
+field_name: field_event
+entity_type: node
+bundle: openpowerliftingstring
+label: Event
+description: "Mandatory. The type of competition that the lifter entered.\r\n\r\nValues are as follows:\r\n\r\n- SBD: Squat-Bench-Deadlift, also commonly called \"Full Power\".\r\n- BD: Bench-Deadlift, also commonly called \"Ironman\" or \"Push-Pull\".\r\n- SD: Squat-Deadlift, very uncommon.\r\n- SB: Squat-Bench, very uncommon.\r\n- S: Squat-only.\r\n- B: Bench-only.\r\n- D: Deadlift-only.\r\n\r\nThe `Event` column is defined by [modules/opltypes/src/event.rs](https://gitlab.com/openpowerlifting/opl-data/blob/master/modules/opltypes/src/event.rs)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

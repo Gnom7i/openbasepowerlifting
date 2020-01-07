@@ -1,0 +1,19 @@
+uuid: fb21b08b-5f40-438a-91ea-df40f09b748c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bench3kg
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_bench3kg
+field_name: field_bench3kg
+entity_type: node
+bundle: openpowerliftingstring
+label: Bench3Kg
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

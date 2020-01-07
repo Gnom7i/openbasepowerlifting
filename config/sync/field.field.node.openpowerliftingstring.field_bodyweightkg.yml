@@ -1,0 +1,19 @@
+uuid: 07897707-de5f-44f7-9ae4-c06cfb6e6fda
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bodyweightkg
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_bodyweightkg
+field_name: field_bodyweightkg
+entity_type: node
+bundle: openpowerliftingstring
+label: BodyweightKg
+description: 'Optional. The recorded bodyweight of the lifter at the time of competition, to two decimal places.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

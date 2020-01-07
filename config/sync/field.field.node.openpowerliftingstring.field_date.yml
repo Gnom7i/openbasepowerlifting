@@ -1,0 +1,19 @@
+uuid: 18d6c87d-3607-498e-994c-784aa162bcda
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_date
+field_name: field_date
+entity_type: node
+bundle: openpowerliftingstring
+label: Date
+description: "Mandatory. The start date of the meet in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601). ISO 8601 looks like `YYYY-MM-DD`: as an example, `1996-12-04` would be December 4th, 1996.\r\n\r\nMeets that last more than one day only have the start date recorded."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

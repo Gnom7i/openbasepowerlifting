@@ -1,0 +1,19 @@
+uuid: c2cbda3a-554b-4286-85aa-84bf35842493
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_name
+field_name: field_name
+entity_type: node
+bundle: openpowerliftingstring
+label: Name
+description: "Mandatory. The name of the lifter in UTF-8 encoding.\r\n\r\nLifters who share the same name are distinguished by use of a `#` symbol followed by a unique number. For example, two lifters both named `John Doe` would have `Name` values `John Doe #1` and `John Doe #2` respectively."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

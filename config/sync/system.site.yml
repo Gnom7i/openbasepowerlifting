@@ -1,0 +1,14 @@
+uuid: b03899e8-a1a5-4a73-af67-b280971ae536
+name: 'База данных пауэрлифтинга'
+mail: mashkov.e.m@ya.ru
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: ru
+default_langcode: ru
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

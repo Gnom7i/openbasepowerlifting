@@ -1,0 +1,19 @@
+uuid: 3d62815b-9da9-49ac-90ae-32bcb7787c77
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_federation
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_federation
+field_name: field_federation
+entity_type: node
+bundle: openpowerliftingstring
+label: Federation
+description: "Mandatory. The federation that hosted the meet.\r\n\r\nNote that this may be different than the international federation that provided sanction to the meet. For example, USPA meets are sanctioned by the IPL, but we record USPA meets as `USPA`.\r\n\r\nThe full list of valid Federation values is defined by [modules/opltypes/src/federation.rs](https://gitlab.com/openpowerlifting/opl-data/blob/master/modules/opltypes/src/federation.rs). Comments in that file help explain what each federation value means."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

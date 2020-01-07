@@ -1,0 +1,19 @@
+uuid: b2eccd2c-16a2-4715-963b-05ac045f914f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unique_of_tamper
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_unique_of_tamper
+field_name: field_unique_of_tamper
+entity_type: node
+bundle: openpowerliftingstring
+label: 'Unique of tamper'
+description: 'Создано для модуля feeds_tamper для того чтобы научится склеивать поля и делать из них уникальные значения.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: a480ffd3-7ce1-4cf2-892f-5661b383bdbc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_squat2kg
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_squat2kg
+field_name: field_squat2kg
+entity_type: node
+bundle: openpowerliftingstring
+label: Squat2Kg
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

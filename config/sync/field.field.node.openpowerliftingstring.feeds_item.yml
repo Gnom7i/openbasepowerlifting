@@ -1,0 +1,23 @@
+uuid: 9e886261-72a5-490c-9b21-ec48c293eeea
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.openpowerliftingstring
+  module:
+    - feeds
+id: node.openpowerliftingstring.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: openpowerliftingstring
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

@@ -1,0 +1,23 @@
+uuid: 20e0c837-2c27-4ea1-aaa5-65b00c9b9e7b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ipfpoints_float
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_ipfpoints_float
+field_name: field_ipfpoints_float
+entity_type: node
+bundle: openpowerliftingstring
+label: IPFPoints-float
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

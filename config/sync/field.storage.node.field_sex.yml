@@ -1,0 +1,21 @@
+uuid: fe8304d0-531d-4bf2-ab1d-d6fcb2efd171
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_sex
+field_name: field_sex
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

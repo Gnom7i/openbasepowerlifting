@@ -1,0 +1,19 @@
+uuid: 03be7555-671e-49d2-ad99-18a456d0b204
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weightclasskg
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_weightclasskg
+field_name: field_weightclasskg
+entity_type: node
+bundle: openpowerliftingstring
+label: WeightClassKg
+description: "Optional. The weight class in which the lifter competed, to two decimal places.\r\n\r\nWeight classes can be specified as a maximum or as a minimum. Maximums are specified by just the number, for example `90` means \"up to (and including) 90kg.\" minimums are specified by a `+` to the right of the number, for example `90+` means \"above (and excluding) 90kg.\""
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

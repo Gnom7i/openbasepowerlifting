@@ -1,0 +1,19 @@
+uuid: 8ebf4593-7cc2-4a67-97a3-e18e99186da4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sex
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_sex
+field_name: field_sex
+entity_type: node
+bundle: openpowerliftingstring
+label: Sex
+description: "Mandatory. The sex category in which the lifter competed, `M`, `F`, or `Mx`.\r\n\r\nMx (pronounced *Muks*) is a gender-neutral title — like Mr and Ms — originating from the UK. It is a catch-all sex category that is particularly appropriate for non-binary lifters.\r\n\r\nThe `Sex` column is defined by [modules/opltypes/src/sex.rs](https://gitlab.com/openpowerlifting/opl-data/blob/master/modules/opltypes/src/sex.rs)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 51b7a23d-ae18-4137-923c-ce5e5ed55724
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_age
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_age
+field_name: field_age
+entity_type: node
+bundle: openpowerliftingstring
+label: Age
+description: "Optional. The age of the lifter on the start date of the meet, if known.\r\n\r\nAges can be one of two types: exact or approximate. Exact ages are given as integer numbers, for example `23`. Approximate ages are given as an integer plus `0.5`, for example `23.5`.\r\n\r\nApproximate ages mean that the lifter could be either of *two* possible ages. For an approximate age of `n + 0.5`, the possible ages are `n` or `n+1`. For example, a lifter with the given age `23.5` could be either `23` or `24` -- we don't have enough information to know.\r\n\r\nApproximate ages occur because some federations only provide us with birth year information. So another way to think about approximate ages is that `23.5` implies that the lifter turns `24` that year.\r\n\r\nThe `Age` column is defined by [modules/opltypes/src/age.rs](https://gitlab.com/openpowerlifting/opl-data/blob/master/modules/opltypes/src/age.rs)."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

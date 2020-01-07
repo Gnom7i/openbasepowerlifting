@@ -1,0 +1,19 @@
+uuid: d3690cfe-028a-45e3-af52-754202db3e67
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meetname
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_meetname
+field_name: field_meetname
+entity_type: node
+bundle: openpowerliftingstring
+label: MeetName
+description: "Mandatory. The name of the meet.\r\n\r\nThe name is defined to never include the year or the federation. For example, the meet officially called `2019 USAPL Raw National Championships` would have the MeetName `Raw National Championshps`.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

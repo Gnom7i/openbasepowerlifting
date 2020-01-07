@@ -1,0 +1,19 @@
+uuid: 75d10bf3-49ec-4293-a208-7a404a4b1c37
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_deadlift3kg
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_deadlift3kg
+field_name: field_deadlift3kg
+entity_type: node
+bundle: openpowerliftingstring
+label: Deadlift3Kg
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

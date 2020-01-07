@@ -1,0 +1,31 @@
+uuid: 8e9333c4-4a09-41a7-9504-3c39d9f3d0ed
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.athlete_data
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__athlete_data_block_2
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:athlete_data-block_2'
+settings:
+  id: 'views_block:athlete_data-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/athlete/*'
+    negate: false
+    context_mapping: {  }

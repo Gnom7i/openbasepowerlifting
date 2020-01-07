@@ -1,0 +1,57 @@
+uuid: 13115055-1a2d-496d-9103-ff082201a39b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.openpowerliftingstring.field_age
+    - field.field.node.openpowerliftingstring.field_name
+    - node.type.openpowerliftingstring
+  module:
+    - node
+label: 'Из каталога'
+id: iz_kataloga
+description: ''
+help: ''
+import_period: -1
+fetcher: directory
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  allowed_schemes:
+    public: public
+  recursive_scan: false
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: openpowerliftingstring
+custom_sources:
+  age:
+    label: Age
+    value: Age
+    machine_name: age
+  name:
+    label: Name
+    value: Name
+    machine_name: name
+mappings:
+  -
+    target: field_age
+    map:
+      value: age
+    unique: {  }
+  -
+    target: field_name
+    map:
+      value: name
+    unique: {  }

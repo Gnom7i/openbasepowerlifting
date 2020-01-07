@@ -1,0 +1,19 @@
+uuid: 8204d663-eafa-4000-96df-0dc3bd203e9b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ipfpoints
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_ipfpoints
+field_name: field_ipfpoints
+entity_type: node
+bundle: openpowerliftingstring
+label: IPFPoints
+description: "\r\nThe IPF formula is a normal distribution with a mean of 500 and a standard\r\ndeviation of 100. The IPF adopted it beginning in 2019 to replace the Wilks formula.\r\n\r\nThe calculation of IPF points is defined by [modules/coefficients/src/ipf.rs](https://gitlab.com/openpowerlifting/opl-data/blob/master/modules/coefficients/src/ipf.rs).\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

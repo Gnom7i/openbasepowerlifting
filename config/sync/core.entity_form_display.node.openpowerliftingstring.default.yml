@@ -1,0 +1,438 @@
+uuid: 0d7dbd6c-2c14-4dff-ac9e-8575270882d3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.openpowerliftingstring.feeds_item
+    - field.field.node.openpowerliftingstring.field_age
+    - field.field.node.openpowerliftingstring.field_ageclass
+    - field.field.node.openpowerliftingstring.field_bench1kg
+    - field.field.node.openpowerliftingstring.field_bench2kg
+    - field.field.node.openpowerliftingstring.field_bench3kg
+    - field.field.node.openpowerliftingstring.field_bench4kg
+    - field.field.node.openpowerliftingstring.field_best3benchkg
+    - field.field.node.openpowerliftingstring.field_best3deadliftkg
+    - field.field.node.openpowerliftingstring.field_best3squatkg
+    - field.field.node.openpowerliftingstring.field_birthyearclass
+    - field.field.node.openpowerliftingstring.field_bodyweightkg
+    - field.field.node.openpowerliftingstring.field_country
+    - field.field.node.openpowerliftingstring.field_date
+    - field.field.node.openpowerliftingstring.field_deadlift1kg
+    - field.field.node.openpowerliftingstring.field_deadlift2kg
+    - field.field.node.openpowerliftingstring.field_deadlift3kg
+    - field.field.node.openpowerliftingstring.field_deadlift4kg
+    - field.field.node.openpowerliftingstring.field_division
+    - field.field.node.openpowerliftingstring.field_equipment
+    - field.field.node.openpowerliftingstring.field_event
+    - field.field.node.openpowerliftingstring.field_federation
+    - field.field.node.openpowerliftingstring.field_glossbrenner
+    - field.field.node.openpowerliftingstring.field_ipfpoints
+    - field.field.node.openpowerliftingstring.field_ipfpoints_float
+    - field.field.node.openpowerliftingstring.field_mcculloch
+    - field.field.node.openpowerliftingstring.field_meetcountry
+    - field.field.node.openpowerliftingstring.field_meetname
+    - field.field.node.openpowerliftingstring.field_meetstate
+    - field.field.node.openpowerliftingstring.field_name
+    - field.field.node.openpowerliftingstring.field_place
+    - field.field.node.openpowerliftingstring.field_sex
+    - field.field.node.openpowerliftingstring.field_squat1kg
+    - field.field.node.openpowerliftingstring.field_squat2kg
+    - field.field.node.openpowerliftingstring.field_squat3kg
+    - field.field.node.openpowerliftingstring.field_squat4kg
+    - field.field.node.openpowerliftingstring.field_tested
+    - field.field.node.openpowerliftingstring.field_totalkg
+    - field.field.node.openpowerliftingstring.field_unique_of_tamper
+    - field.field.node.openpowerliftingstring.field_weightclasskg
+    - field.field.node.openpowerliftingstring.field_wilks
+    - node.type.openpowerliftingstring
+  module:
+    - path
+id: node.openpowerliftingstring.default
+targetEntityType: node
+bundle: openpowerliftingstring
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_age:
+    weight: 125
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ageclass:
+    weight: 126
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bench1kg:
+    weight: 132
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bench2kg:
+    weight: 135
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bench3kg:
+    weight: 138
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bench4kg:
+    weight: 141
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_best3benchkg:
+    weight: 144
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_best3deadliftkg:
+    weight: 145
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_best3squatkg:
+    weight: 143
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_birthyearclass:
+    weight: 127
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_bodyweightkg:
+    weight: 129
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_country:
+    weight: 152
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_date:
+    weight: 154
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_deadlift1kg:
+    weight: 133
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_deadlift2kg:
+    weight: 136
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_deadlift3kg:
+    weight: 139
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_deadlift4kg:
+    weight: 142
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_division:
+    weight: 128
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_equipment:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_event:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_federation:
+    weight: 153
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_glossbrenner:
+    weight: 149
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ipfpoints:
+    weight: 150
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ipfpoints_float:
+    weight: 160
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_mcculloch:
+    weight: 158
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_meetcountry:
+    weight: 155
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_meetname:
+    weight: 157
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_meetstate:
+    weight: 156
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_name:
+    weight: 121
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_place:
+    weight: 147
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sex:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_squat1kg:
+    weight: 131
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_squat2kg:
+    weight: 134
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_squat3kg:
+    weight: 137
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_squat4kg:
+    weight: 140
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tested:
+    weight: 151
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_totalkg:
+    weight: 146
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_unique_of_tamper:
+    weight: 159
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_weightclasskg:
+    weight: 130
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_wilks:
+    weight: 148
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  feeds_item: true

@@ -1,0 +1,437 @@
+uuid: 2b28773c-0852-44a0-92d0-0cfbd72f2a73
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.openpowerliftingstring.field_age
+    - field.field.node.openpowerliftingstring.field_ageclass
+    - field.field.node.openpowerliftingstring.field_bench1kg
+    - field.field.node.openpowerliftingstring.field_bench2kg
+    - field.field.node.openpowerliftingstring.field_bench3kg
+    - field.field.node.openpowerliftingstring.field_best3benchkg
+    - field.field.node.openpowerliftingstring.field_best3deadliftkg
+    - field.field.node.openpowerliftingstring.field_best3squatkg
+    - field.field.node.openpowerliftingstring.field_birthyearclass
+    - field.field.node.openpowerliftingstring.field_bodyweightkg
+    - field.field.node.openpowerliftingstring.field_country
+    - field.field.node.openpowerliftingstring.field_date
+    - field.field.node.openpowerliftingstring.field_deadlift1kg
+    - field.field.node.openpowerliftingstring.field_deadlift2kg
+    - field.field.node.openpowerliftingstring.field_deadlift3kg
+    - field.field.node.openpowerliftingstring.field_deadlift4kg
+    - field.field.node.openpowerliftingstring.field_division
+    - field.field.node.openpowerliftingstring.field_equipment
+    - field.field.node.openpowerliftingstring.field_event
+    - field.field.node.openpowerliftingstring.field_federation
+    - field.field.node.openpowerliftingstring.field_glossbrenner
+    - field.field.node.openpowerliftingstring.field_ipfpoints
+    - field.field.node.openpowerliftingstring.field_mcculloch
+    - field.field.node.openpowerliftingstring.field_meetcountry
+    - field.field.node.openpowerliftingstring.field_meetname
+    - field.field.node.openpowerliftingstring.field_meetstate
+    - field.field.node.openpowerliftingstring.field_name
+    - field.field.node.openpowerliftingstring.field_place
+    - field.field.node.openpowerliftingstring.field_sex
+    - field.field.node.openpowerliftingstring.field_squat1kg
+    - field.field.node.openpowerliftingstring.field_squat2kg
+    - field.field.node.openpowerliftingstring.field_squat3kg
+    - field.field.node.openpowerliftingstring.field_squat4kg
+    - field.field.node.openpowerliftingstring.field_tested
+    - field.field.node.openpowerliftingstring.field_totalkg
+    - field.field.node.openpowerliftingstring.field_unique_of_tamper
+    - field.field.node.openpowerliftingstring.field_weightclasskg
+    - field.field.node.openpowerliftingstring.field_wilks
+    - node.type.openpowerliftingstring
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      f106b4a6-cc0e-4f35-9c90-27ca7da848f9:
+        text: "[name] [age_csv] [division] [event] [equipment] [date] [meetname] [ageclass] [birthyearclass]\r\n"
+        plugin: rewrite
+        source: unique
+        weight: 0
+        label: Перезапись
+        uuid: f106b4a6-cc0e-4f35-9c90-27ca7da848f9
+label: 'Импорт из базы данных OpenPowerlifting'
+id: import_of_openpower
+description: ''
+help: ''
+import_period: -1
+fetcher: directory
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  allowed_schemes:
+    public: public
+  recursive_scan: false
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: true
+  owner_id: 1
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: openpowerliftingstring
+custom_sources:
+  age:
+    label: age
+    value: age
+    machine_name: age
+  name:
+    label: Name
+    value: Name
+    machine_name: name
+  sex:
+    label: Sex
+    value: Sex
+    machine_name: sex
+  event:
+    label: Event
+    value: Event
+    machine_name: event
+  squat1kg:
+    label: Squat1Kg
+    value: Squat1Kg
+    machine_name: squat1kg
+  bench1kg:
+    label: Bench1Kg
+    value: Bench1Kg
+    machine_name: bench1kg
+  deadlift1kg:
+    label: Deadlift1Kg
+    value: Deadlift1Kg
+    machine_name: deadlift1kg
+  equipment:
+    label: Equipment
+    value: Equipment
+    machine_name: equipment
+  age_csv:
+    label: Age
+    value: Age
+    machine_name: age_csv
+  ageclass:
+    label: AgeClass
+    value: AgeClass
+    machine_name: ageclass
+  birthyearclass:
+    label: BirthYearClass
+    value: BirthYearClass
+    machine_name: birthyearclass
+  division:
+    label: Division
+    value: Division
+    machine_name: division
+  bodyweightkg:
+    label: BodyweightKg
+    value: BodyweightKg
+    machine_name: bodyweightkg
+  weightclasskg:
+    label: WeightClassKg
+    value: WeightClassKg
+    machine_name: weightclasskg
+  squat2kg:
+    label: Squat2Kg
+    value: Squat2Kg
+    machine_name: squat2kg
+  bench2kg:
+    label: Bench2Kg
+    value: Bench2Kg
+    machine_name: bench2kg
+  deadlift2kg:
+    label: Deadlift2Kg
+    value: Deadlift2Kg
+    machine_name: deadlift2kg
+  squat3kg:
+    label: Squat3Kg
+    value: Squat3Kg
+    machine_name: squat3kg
+  bench3kg:
+    label: Bench3Kg
+    value: Bench3Kg
+    machine_name: bench3kg
+  deadlift3kg:
+    label: Deadlift3Kg
+    value: Deadlift3Kg
+    machine_name: deadlift3kg
+  squat4kg:
+    label: Squat4Kg
+    value: Squat4Kg
+    machine_name: squat4kg
+  best3benchkg:
+    label: Best3BenchKg
+    value: Best3BenchKg
+    machine_name: best3benchkg
+  deadlift4kg:
+    label: Deadlift4Kg
+    value: Deadlift4Kg
+    machine_name: deadlift4kg
+  best3squatkg:
+    label: Best3SquatKg
+    value: Best3SquatKg
+    machine_name: best3squatkg
+  best3deadliftkg:
+    label: Best3DeadliftKg
+    value: Best3DeadliftKg
+    machine_name: best3deadliftkg
+  totalkg:
+    label: TotalKg
+    value: TotalKg
+    machine_name: totalkg
+  place:
+    label: Place
+    value: Place
+    machine_name: place
+  wilks:
+    label: Wilks
+    value: Wilks
+    machine_name: wilks
+  mcculloch:
+    label: McCulloch
+    value: McCulloch
+    machine_name: mcculloch
+  glossbrenner:
+    label: Glossbrenner
+    value: Glossbrenner
+    machine_name: glossbrenner
+  ipfpoints:
+    label: IPFPoints
+    value: IPFPoints
+    machine_name: ipfpoints
+  tested:
+    label: Tested
+    value: Tested
+    machine_name: tested
+  country:
+    label: Country
+    value: Country
+    machine_name: country
+  date:
+    label: Date
+    value: Date
+    machine_name: date
+  meetcountry:
+    label: MeetCountry
+    value: MeetCountry
+    machine_name: meetcountry
+  '':
+    label: ''
+    value: ''
+    machine_name: ''
+  meetname:
+    label: MeetName
+    value: MeetName
+    machine_name: meetname
+  federation:
+    label: Federation
+    value: Federation
+    machine_name: federation
+  unique:
+    label: Unique
+    value: Unique
+    machine_name: unique
+  meetstate:
+    label: MeetState
+    value: MeetState
+    machine_name: meetstate
+mappings:
+  -
+    target: field_name
+    map:
+      value: name
+    unique: {  }
+  -
+    target: field_sex
+    map:
+      value: sex
+    unique: {  }
+  -
+    target: field_event
+    map:
+      value: event
+    unique: {  }
+  -
+    target: field_equipment
+    map:
+      value: equipment
+    unique: {  }
+  -
+    target: field_age
+    map:
+      value: age_csv
+    unique: {  }
+  -
+    target: field_ageclass
+    map:
+      value: ageclass
+    unique: {  }
+  -
+    target: field_birthyearclass
+    map:
+      value: birthyearclass
+    unique: {  }
+  -
+    target: field_division
+    map:
+      value: division
+    unique: {  }
+  -
+    target: field_bodyweightkg
+    map:
+      value: bodyweightkg
+    unique: {  }
+  -
+    target: field_weightclasskg
+    map:
+      value: weightclasskg
+    unique: {  }
+  -
+    target: field_squat1kg
+    map:
+      value: squat1kg
+    unique: {  }
+  -
+    target: field_bench1kg
+    map:
+      value: bench1kg
+    unique: {  }
+  -
+    target: field_deadlift1kg
+    map:
+      value: deadlift1kg
+    unique: {  }
+  -
+    target: field_squat2kg
+    map:
+      value: squat2kg
+    unique: {  }
+  -
+    target: field_bench2kg
+    map:
+      value: bench2kg
+    unique: {  }
+  -
+    target: field_deadlift2kg
+    map:
+      value: deadlift2kg
+    unique: {  }
+  -
+    target: field_squat3kg
+    map:
+      value: squat3kg
+    unique: {  }
+  -
+    target: field_bench3kg
+    map:
+      value: bench3kg
+    unique: {  }
+  -
+    target: field_deadlift3kg
+    map:
+      value: deadlift3kg
+    unique: {  }
+  -
+    target: field_squat4kg
+    map:
+      value: squat4kg
+    unique: {  }
+  -
+    target: field_best3benchkg
+    map:
+      value: best3benchkg
+    unique: {  }
+  -
+    target: field_deadlift4kg
+    map:
+      value: deadlift4kg
+    unique: {  }
+  -
+    target: field_best3squatkg
+    map:
+      value: best3squatkg
+    unique: {  }
+  -
+    target: field_best3deadliftkg
+    map:
+      value: best3deadliftkg
+    unique: {  }
+  -
+    target: field_totalkg
+    map:
+      value: totalkg
+    unique: {  }
+  -
+    target: field_place
+    map:
+      value: place
+    unique: {  }
+  -
+    target: field_wilks
+    map:
+      value: wilks
+    unique: {  }
+  -
+    target: field_mcculloch
+    map:
+      value: mcculloch
+    unique: {  }
+  -
+    target: field_glossbrenner
+    map:
+      value: glossbrenner
+    unique: {  }
+  -
+    target: field_ipfpoints
+    map:
+      value: ipfpoints
+    unique: {  }
+  -
+    target: field_tested
+    map:
+      value: tested
+    unique: {  }
+  -
+    target: field_country
+    map:
+      value: country
+    unique: {  }
+  -
+    target: field_date
+    map:
+      value: date
+    unique: {  }
+  -
+    target: field_meetcountry
+    map:
+      value: meetcountry
+    unique: {  }
+  -
+    target: field_meetstate
+    map:
+      value: meetstate
+    unique: {  }
+  -
+    target: field_meetname
+    map:
+      value: meetname
+    unique: {  }
+  -
+    target: field_federation
+    map:
+      value: federation
+    unique: {  }
+  -
+    target: field_unique_of_tamper
+    map:
+      value: unique
+    unique:
+      value: '1'

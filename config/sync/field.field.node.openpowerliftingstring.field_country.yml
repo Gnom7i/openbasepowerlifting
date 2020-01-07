@@ -1,0 +1,19 @@
+uuid: ec1188ca-3033-4940-8851-66fe773139ea
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_country
+field_name: field_country
+entity_type: node
+bundle: openpowerliftingstring
+label: Country
+description: "Optional. The home country of the lifter, if known.\r\n\r\nThe full list of valid Country values is defined by [modules/opltypes/src/country.rs](https://gitlab.com/openpowerlifting/opl-data/blob/master/modules/opltypes/src/country.rs).\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

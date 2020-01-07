@@ -1,0 +1,6 @@
+status: 1
+pattern: '[node:field_name]: [node:field_meetname]  [node:field_event] [node:field_equipment] [node:field_date] [node:field_federation]'
+escape: false
+dependencies:
+  config:
+    - node.type.openpowerliftingstring

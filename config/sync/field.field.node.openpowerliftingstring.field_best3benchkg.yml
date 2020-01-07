@@ -1,0 +1,19 @@
+uuid: 2c23ca66-5ce5-42bb-a06c-294b9aa7d8f9
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_best3benchkg
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_best3benchkg
+field_name: field_best3benchkg
+entity_type: node
+bundle: openpowerliftingstring
+label: Best3BenchKg
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

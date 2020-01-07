@@ -1,0 +1,19 @@
+uuid: bfe95d2d-cf79-4472-b6be-3eb3df4760b3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_division
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.field_division
+field_name: field_division
+entity_type: node
+bundle: openpowerliftingstring
+label: Division
+description: "Optional. Free-form UTF-8 text describing the division of competition, like `Open` or `Juniors 20-23` or `Professional`.\r\n\r\nSome federations are *configured* in our database, which means that we have agreed on a limited set of division options for that federation, and we have rewritten their results to only use that set, and tests enforce that. Even still, divisions are not standardized *between* configured federations: it really is free-form text, just to provide context.\r\n\r\nInformation about age should not be extracted from the `Division`, but from the `AgeClass` column.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

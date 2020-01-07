@@ -1,0 +1,22 @@
+uuid: d487ac91-8be2-4dcb-a3d8-54838b744309
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.openpowerliftingstring
+id: node.openpowerliftingstring.promote
+field_name: promote
+entity_type: node
+bundle: openpowerliftingstring
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean
