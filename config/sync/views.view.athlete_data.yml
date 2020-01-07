@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_country
+    - field.storage.node.field_equipment
     - field.storage.node.field_event
     - field.storage.node.field_federation
     - field.storage.node.field_name
@@ -442,7 +443,70 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Federation
+          label: Федерация
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_equipment:
+          id: field_equipment
+          table: node__field_equipment
+          field: field_equipment
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Дивизион
           exclude: false
           alter:
             alter_text: false
@@ -505,7 +569,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Event
+          label: Дисциплина
           exclude: false
           alter:
             alter_text: false
@@ -568,7 +632,7 @@ display:
           relationship: none
           group_type: max
           admin_label: ''
-          label: Best3SquatKg
+          label: Присед
           exclude: false
           alter:
             alter_text: false
@@ -609,6 +673,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQD
+          prefix: ''
+          suffix: ''
           click_sort_column: value
           type: string
           settings:
@@ -621,7 +693,6 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
           field_api_classes: false
           plugin_id: field
         field_best3benchkg:
@@ -631,7 +702,7 @@ display:
           relationship: none
           group_type: max
           admin_label: ''
-          label: Best3BenchKg
+          label: 'Жим лежа'
           exclude: false
           alter:
             alter_text: false
@@ -672,6 +743,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQD
+          prefix: ''
+          suffix: ''
           click_sort_column: value
           type: string
           settings:
@@ -684,7 +763,6 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
           field_api_classes: false
           plugin_id: field
         field_best3deadliftkg:
@@ -694,7 +772,7 @@ display:
           relationship: none
           group_type: max
           admin_label: ''
-          label: Best3DeadliftKg
+          label: 'Становая тяга'
           exclude: false
           alter:
             alter_text: false
@@ -735,6 +813,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQD
+          prefix: ''
+          suffix: ''
           click_sort_column: value
           type: string
           settings:
@@ -747,7 +833,6 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
           field_api_classes: false
           plugin_id: field
         field_totalkg:
@@ -757,7 +842,7 @@ display:
           relationship: none
           group_type: max
           admin_label: ''
-          label: TotalKg
+          label: Сумма
           exclude: false
           alter:
             alter_text: false
@@ -798,6 +883,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ', '
+          format_plural: 0
+          format_plural_string: !!binary MQNAY291bnQD
+          prefix: ''
+          suffix: ''
           click_sort_column: value
           type: string
           settings:
@@ -810,15 +903,7 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
           field_api_classes: false
-          set_precision: false
-          precision: 0
-          decimal: .
-          format_plural: false
-          format_plural_string: !!binary MQNAY291bnQ=
-          prefix: ''
-          suffix: ''
           plugin_id: field
       sorts:
         field_name_value:
@@ -849,6 +934,18 @@ display:
           id: field_event_value
           table: node__field_event
           field: field_event_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+        field_equipment_value:
+          id: field_equipment_value
+          table: node__field_equipment
+          field: field_equipment_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -896,5 +993,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_equipment'
         - 'config:field.storage.node.field_event'
         - 'config:field.storage.node.field_federation'
