@@ -1,0 +1,58 @@
+uuid: 411bd556-7940-4aae-87b5-8765730f3947
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.instagram.field_instagram
+    - field.field.node.instagram.field_name
+    - node.type.instagram
+  module:
+    - node
+label: Instagram
+id: instagram
+description: ''
+help: ''
+import_period: 2419200
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: instagram
+custom_sources:
+  name:
+    label: Name
+    value: Name
+    machine_name: name
+  instagram:
+    label: Instagram
+    value: Instagram
+    machine_name: instagram
+mappings:
+  -
+    target: field_name
+    map:
+      value: name
+    unique:
+      value: '1'
+  -
+    target: field_instagram
+    map:
+      value: instagram
+    unique: {  }

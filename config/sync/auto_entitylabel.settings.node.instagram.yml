@@ -1,0 +1,6 @@
+status: 1
+pattern: '[node:field_name] зарегистрирован в Instagram как [node:field_instagram]'
+escape: false
+dependencies:
+  config:
+    - node.type.instagram

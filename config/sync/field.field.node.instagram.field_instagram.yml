@@ -1,0 +1,19 @@
+uuid: 2ee4b995-7019-4c72-a0c4-3a035bed0477
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instagram
+    - node.type.instagram
+id: node.instagram.field_instagram
+field_name: field_instagram
+entity_type: node
+bundle: instagram
+label: Instagram
+description: 'Ник спортсмена в Instagram'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -49,7 +49,7 @@ third_party_settings:
   feeds_tamper:
     tampers:
       f106b4a6-cc0e-4f35-9c90-27ca7da848f9:
-        text: "[name] [age_csv] [division] [event] [equipment] [date] [meetname] [ageclass] [birthyearclass]\r\n"
+        text: "[name]-[sex]-[age_csv]-[event]-[division]-[ageclass]-[birthyearclass]-[equipment]-[division]-[date]-[totalkg]-[place]-[meetname]-[wilks]-[tested]-[federation]\r\n"
         plugin: rewrite
         source: unique
         weight: 0
@@ -74,7 +74,7 @@ parser_configuration:
 processor: 'entity:node'
 processor_configuration:
   update_existing: 2
-  update_non_existent: _keep
+  update_non_existent: _delete
   expire: -1
   owner_feed_author: true
   owner_id: 1

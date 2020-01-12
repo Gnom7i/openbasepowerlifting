@@ -1,0 +1,11 @@
+uuid: 8af3ae73-c221-4bee-be29-9e3b565137cc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.instagram
+id: node.instagram
+target_entity_type_id: node
+target_bundle: instagram
+default_langcode: site_default
+language_alterable: false

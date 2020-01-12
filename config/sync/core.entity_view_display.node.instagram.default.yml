@@ -1,0 +1,40 @@
+uuid: d062a7dd-13a3-4c9f-b66c-509676c0144c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.instagram.feeds_item
+    - field.field.node.instagram.field_instagram
+    - field.field.node.instagram.field_name
+    - node.type.instagram
+  module:
+    - user
+id: node.instagram.default
+targetEntityType: node
+bundle: instagram
+mode: default
+content:
+  field_instagram:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true

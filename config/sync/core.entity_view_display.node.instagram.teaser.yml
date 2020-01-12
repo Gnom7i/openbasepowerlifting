@@ -1,0 +1,27 @@
+uuid: ffaa8a98-7684-414a-817b-17dd2e0ce01a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.instagram.feeds_item
+    - field.field.node.instagram.field_instagram
+    - field.field.node.instagram.field_name
+    - node.type.instagram
+  module:
+    - user
+id: node.instagram.teaser
+targetEntityType: node
+bundle: instagram
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  feeds_item: true
+  field_instagram: true
+  field_name: true
+  langcode: true
